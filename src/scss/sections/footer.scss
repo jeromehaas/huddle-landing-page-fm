@@ -1,0 +1,31 @@
+.footer {
+	padding: 64px 0;
+
+	&__icons, .icons {
+		display: flex;
+		flex-direction: row;
+		justify-content: flex-end;
+		gap: 16px;
+
+		&__item {
+			width: 40px;
+			height: 40px;
+			cursor: pointer;
+			border: 1px solid $white;
+			border-radius: 50%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			font-size: 16px;
+			transition: all 0.1s ease-in-out;
+
+			&:hover {
+				color: $magenta;
+				border-color: $magenta;
+			}
+
+		}
+
+	}
+
+}

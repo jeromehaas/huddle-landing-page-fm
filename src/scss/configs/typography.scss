@@ -1,4 +1,20 @@
 * {
-	color: $black;
 	font-size: 10px;
+	font-family: 'Open-Sans', serif;
+	color: $white;
+}
+
+h1, .heading--h1 {
+	font-size: 40px;
+	font-weight: 700;
+}
+
+p {
+	font-size: 18px;
+}
+
+
+button {
+	font-size: 18px;
+	box-shadow: 2px 4px 9px 3px rgba(0, 0, 0, 0.258633);
 }

@@ -1,8 +1,8 @@
 @font-face {
 	font-family: 'Open-Sans';
 	src: 
-		local('fonts/open-sans'), url('/src/assets/fonts/open-sans/open-sans-light.ttf') format('ttf'),
-		local('fonts/open-sans'), url('/src/assets/fonts/open-sans/open-sans-light.woff2') format('woff2');
+		local('fonts/open-sans'), url('../../assets/fonts/open-sans/open-sans-light.ttf') format('ttf'),
+		local('fonts/open-sans'), url('../../assets/fonts/open-sans/open-sans-light.woff2') format('woff2');
 	font-display: block;
 	font-weight: 300;
 }
@@ -10,8 +10,8 @@
 @font-face {
 	font-family: 'Open-Sans';
 	src: 
-	local('fonts/open-sans'), url('/src/assets/fonts/open-sans/open-sans-regular.ttf') format('ttf'),
-	local('fonts/open-sans'), url('/src/assets/fonts/open-sans/open-sans-regular.woff2') format('woff2');
+	local('fonts/open-sans'), url('../../assets/fonts/open-sans/open-sans-regular.ttf') format('ttf'),
+	local('fonts/open-sans'), url('../../assets/fonts/open-sans/open-sans-regular.woff2') format('woff2');
 	font-display: block;
 	font-weight: 400;
 }
@@ -19,8 +19,8 @@
 @font-face {
 	font-family: 'Open-Sans';
 	src: 
-		local('fonts/open-sans'), url('/src/assets/fonts/open-sans/open-sans-medium.ttf') format('ttf'),
-		local('fonts/open-sans'), url('/src/assets/fonts/open-sans/open-sans-medium.woff2') format('woff2');
+		local('fonts/open-sans'), url('../../assets/fonts/open-sans/open-sans-medium.ttf') format('ttf'),
+		local('fonts/open-sans'), url('../../assets/fonts/open-sans/open-sans-medium.woff2') format('woff2');
 	font-display: block;
 	font-weight: 500;
 }
@@ -28,18 +28,26 @@
 @font-face {
 	font-family: 'Open-Sans';
 	src: 
-		local('fonts/open-sans'), url('/src/assets/fonts/open-sans/open-sans-bold.ttf') format('ttf'),
-		local('fonts/open-sans'), url('/src/assets/fonts/open-sans/open-sans-bold.woff2') format('woff2');
+		local('fonts/open-sans'), url('../../assets/fonts/open-sans/open-sans-bold.ttf') format('ttf'),
+		local('fonts/open-sans'), url('../../assets/fonts/open-sans/open-sans-bold.woff2') format('woff2');
 	font-display: block;
 	font-weight: 700;
 }
 
-
 @font-face {
 	font-family: 'Open-Sans';
 	src: 
-		local('fonts/open-sans'), url('/src/assets/fonts/open-sans/open-sans-extrabold.ttf') format('ttf'),
-		local('fonts/open-sans'), url('/src/assets/fonts/open-sans/open-sans-extrabold.woff2') format('woff2');
+		local('fonts/open-sans'), url('../../assets/fonts/open-sans/open-sans-extrabold.ttf') format('ttf'),
+		local('fonts/open-sans'), url('../../assets/fonts/open-sans/open-sans-extrabold.woff2') format('woff2');
+	font-display: block;
+	font-weight: 800;
+}
+
+@font-face {
+	font-family: 'Icon';
+	src: 
+		local('fonts/icon'), url('../../assets/fonts/icon/icon.ttf') format('ttf'),
+		local('fonts/icon'), url('../../assets/fonts/icon/icon.woff2') format('woff2');
 	font-display: block;
 	font-weight: 800;
 }
