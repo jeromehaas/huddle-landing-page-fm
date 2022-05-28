@@ -37,7 +37,6 @@ class Background {
 	}
 
 	setupPreviewAnimation = () => {
-		console.log(this.preview.small);
 		const timeline = gsap.timeline();
 		timeline.to(this.preview.small, { y: -16, opacity: 1 , duration: 1, stagger: 0.1 });
 		timeline.to(this.preview.big, { y: -16, opacity: 1 , duration: 1, stagger: 0.1 });
