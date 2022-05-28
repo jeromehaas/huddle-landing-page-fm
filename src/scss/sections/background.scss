@@ -4,5 +4,99 @@
 	right: 0;
 	bottom: 0;
 	left: 0;
-	background-color: $purple;
+	width: 100%;
+	height: 100vh !important;
+	width: 100vw !important;
+	max-width: 100vw;
+	z-index: -50;
+	overflow: hidden !important;
+
+	&__triangle, .triangle {
+		position: relative;
+		width: 100%;
+		height: 100%;
+		margin: 0;
+
+		&__item {
+			content: "";
+			position: absolute;			
+			top: 50%;
+			left: -32px;
+			height: 120px;
+			width: 150vh;
+			min-width: 150vw;
+			transform-origin: left;
+			background: linear-gradient(270deg, rgba(249, 82, 197, 0.75) 0%, rgba(153, 82, 255, 0.0) 0%);
+			
+			&--top {
+				transform:perspective(1500px) rotateY(-40deg) rotate(25deg)
+			}
+			
+			&--bottom {
+				transform:perspective(1500px) rotateY(-40deg) rotate(-25deg)
+			}
+			
+		}
+
+	}
+
+	&__square {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		margin: 0;
+		width: 32px;
+		height: 32px;
+		background: linear-gradient(135deg, rgba(249, 82, 197, 0.75) 0%, rgba(153, 82, 255, 0.0) 100%);
+		transform: rotate(45deg);
+		border-radius: 3px;
+
+		&--one { top: 220px; left: 740px; width: 32px; height: 32px }
+		&--two { top: 120px; left: 940px; width: 28px; height: 28px }
+		&--three { top: 160px; left: 1240px; width: 40px; height: 40px; }
+		&--four { top: 820px; left: 1140px; width: 32px; height: 32px}
+		&--five { top: 720px; left: 1340px; width: 16px; height: 16px}
+
+	}
+
+	@media (max-width: 1050px) {
+		height: 150vh !important;
+		width: 150vw !important;
+
+		&__triangle {	
+	
+			&:after, 
+			&:before {
+				top: 30%;
+				left: -160px;
+				height: 120px;
+				width: 150vh;
+				min-width: 150vw;
+				transform-origin: left;
+				background: linear-gradient(270deg, rgba(249, 82, 197, 0.75) 0%, rgba(153, 82, 255, 0.0) 80%);
+			}
+
+	}
+
+	&__square {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		margin: 0;
+		width: 32px;
+		height: 32px;
+		background: linear-gradient(135deg, rgba(249, 82, 197, 0.75) 0%, rgba(153, 82, 255, 0.0) 100%);
+		transform: rotate(45deg);
+		border-radius: 3px;
+
+		&--one { top: 200px; left: 650px; width: 32px; height: 32px }
+		&--two { top: 770px; left: 830px; width: 16px; height: 16px }
+		&--three { top: 1000px; left: 120px; width: 40px; height: 40px; }
+		&--four { top: 1400px; left: 320px; width: 16px; height: 16px}
+		&--five { top: 1300px; left: 660px; width: 24px; height: 24px}
+
+	}
+
+}
+
 }

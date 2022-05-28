@@ -60,6 +60,7 @@
 				padding: 64px;
 				
 				&__item, .item {
+					opacity: 0;
 					height: auto;
 					width: 100%;
 					display: flex;
@@ -79,6 +80,13 @@
 						display: block;
 						background: $gradient-yellow-magenta;
 						border-radius: 50%;
+						transition: all 0.1s ease;
+						cursor: pointer;
+						
+						&:hover {
+							filter: brightness(0.85);
+							overflow: visible;
+						}
 					}
 
 					&__heading {
@@ -93,11 +101,30 @@
 					}
 
 					&__paragraph {
-						height: 6px;
+						height: 3px;
 						width: 100%;
 						display: block;
-						margin-bottom: 6px;
+						margin-bottom: 4px;
 						background-color: $grey-light;
+						
+						&:nth-child(1) {
+							height: 4px;
+							margin-bottom: 4px !important; 
+							width: 80px;
+						}
+
+						&:nth-child(2) {
+						}
+
+						&:nth-child(3) {
+							width: calc(100% - 16px);
+						}
+
+						&:nth-child(4) {
+							width: calc(100% - 32px);
+						}
+
+
 					}
 
 				}
@@ -132,7 +159,8 @@
 				}
 
 				& .content {
-					padding: 24px !important;
+					padding: 40px 24px 24px 24px !important;
+
 
 					&__item, .item {
 						gap: 16px !important;
@@ -150,7 +178,6 @@
 						}
 
 						&__paragraph {
-							height: 2px !important;
 							margin-bottom: 2px !important;
 						}
 
@@ -168,7 +195,7 @@
 
 	&__teaser, .teaser {
 		width: 50%;
-		max-width: 600px;
+		max-width: 500px;
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
